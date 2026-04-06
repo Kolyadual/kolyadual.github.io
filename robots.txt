@@ -1,0 +1,53 @@
+# robots.txt for Dual Gaming Centre
+# Optimized for Yandex, Google, and other crawlers
+
+# Разрешаем всем роботам
+User-agent: *
+
+# ----- Основные разрешения -----
+# Корень сайта (только главная страница DGC)
+Allow: /$
+
+# Основные разделы с играми и контентом
+Allow: /dualgamingcentre/$
+Allow: /dualgamingcentre/games/
+Allow: /dualgamingcentre/blog/
+Allow: /dualgamingcentre/categories/
+Allow: /dualgamingcentre/emulator/
+Allow: /dualgamingcentre/img/
+Allow: /dualgamingcentre/css/
+Allow: /dualgamingcentre/js/
+
+# ----- Запреты для служебных и черновых страниц -----
+# Страницы-заглушки и тех. страницы
+Disallow: /dualgamingcentre/404.html
+Disallow: /dualgamingcentre/ads.html
+Disallow: /dualgamingcentre/auth.html
+Disallow: /dualgamingcentre/flips.html
+Disallow: /dualgamingcentre/thank.html
+Disallow: /dualgamingcentre/new.html
+Disallow: /dualgamingcentre/imba.html
+Disallow: /dualgamingcentre/home.html
+Disallow: /dualgamingcentre/newdgc.html
+
+# Черновики и экспериментальные папки
+Disallow: /dualgamingcentre/it/
+Disallow: /dualgamingcentre/RetroCornerEMULATOR/
+Disallow: /dualgamingcentre/dual-dock/
+Disallow: /dualgamingcentre/fully/
+Disallow: /dualgamingcentre/old/
+
+# Файлы подтверждения для вебмастеров (можно оставить, но лучше скрыть)
+Disallow: /dualgamingcentre/google*.html
+Disallow: /dualgamingcentre/yandex*.html
+
+# Системные и служебные файлы
+Disallow: /dualgamingcentre/*.log
+Disallow: /dualgamingcentre/*.tmp
+Disallow: /dualgamingcentre/*.md$
+
+# ----- Настройка задержки (для старых роботов) -----
+Crawl-delay: 5
+
+# ----- Карта сайта -----
+Sitemap: https://kolyadual.github.io/dualgamingcentre/sitemap.xml
